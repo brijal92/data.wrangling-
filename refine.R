@@ -1,6 +1,8 @@
 # Load the data in RStudio
 library(tidyr)
 library(dplyr)
+# Reading File from CSV
+rawcsv <- read.csv("refine_original.csv",header = TRUE)
 # Clean up brand names
 refine_original$company <- tolower(refine_original$company)
 str(refine_original)
