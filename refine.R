@@ -29,5 +29,6 @@ refine1 <- mutate(refine1, product_laptop = ifelse(product_category == "Laptop",
 refine1 <- mutate(refine1, product_tv = ifelse(product_category == "TV", 1, 0))
 refine1 <- mutate(refine1, product_tablet = ifelse(product_category == "Tablet", 1, 0))
 refine_clean <- refine1
+#output csv file
 write.csv(refine_clean, file = "refine_clean.csv")
 
